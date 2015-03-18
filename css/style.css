@@ -2,7 +2,7 @@
 * { -moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box; }
 html { margin:0; padding:0; height:100%; width: 100%; }
 body {
-	background: #555555 url('../images/bg.jpg');
+	background: #ECF0F1;
 	margin:0;
 	padding:0;
 	width:100%;
@@ -95,4 +95,16 @@ body {
 
 .audio-slideshow .audio-control-interface .time-container {
 	right: 3px;
+}
+
+.finished {
+	background: url(../images/happybirthday.png);
+	display: none;
+	width: 600px;
+	height: 381px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -300px;
+	margin-top: -190px;
 }

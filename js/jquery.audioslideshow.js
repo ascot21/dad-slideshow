@@ -103,9 +103,17 @@
 
 					setAudioSlide(nxtSlide);
 				}
+
+			});
+
+			$jPlayerObj.bind($.jPlayer.event.ended, function(event) {
+				$('.audio-slides').fadeOut();
+				$('.finished').fadeIn();
 			});
 
 			$jPlayerObj.bind($.jPlayer.event.play, function(event) { // Add a listener to report the time play began
+				$('.audio-slides').fadeIn();
+				$('.finished').fadeOut();
 				isPlaying = true;
 				$playButton.hide();
 				$pauseButton.show();
